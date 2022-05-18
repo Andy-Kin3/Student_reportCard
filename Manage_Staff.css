@@ -1,0 +1,12 @@
+.info_entry{
+    margin-left: 25%;
+    background-color: aquamarine;
+    border-radius: 30px;
+    text-align: center;
+}
+th{
+    font-size: 20px;
+    width: 280px;
+    border-bottom: 2px solid #000;
+    border-radius: 20px;
+}
