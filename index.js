@@ -1,16 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+const express = require("express");
+const cors = require("cors");
+const app = express()
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+app.use(express.json());
+app.use(cors());
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const db = require("./models");
+
+//Static image folder
+app.use("/Images", express.static('./Images'));
+//Routers
+const postRouter = require('./routes/Posts');
+app.use("/posts", postRouter);
+
+const TeacherPost = require('./routes/T_Posts');
+app.use("/t_posts", TeacherPost);
+
+const UserPost = require('./routes/Users');
+app.use("/auth", UserPost);
+
+db.sequelize.sync().then(() => {
+    app.listen(3001, () => {
+        console.log("Server running on port 3001");
+    });
+    
+});
+
+

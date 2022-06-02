@@ -1,0 +1,8 @@
+html {
+  background: linear-gradient(90deg, #237, #235, #354);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.App {
+  text-align: center;
+}

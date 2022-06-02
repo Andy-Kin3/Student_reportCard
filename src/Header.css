@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    height: 170px;
+    width: auto;
+    display: flex;
+    /* background: transparent; */
+    /* background-color: rgb(31, 70, 85); */
+    background-color: #1c91a6;
+    /* filter: blur(1px); */
+    /* -webkit-filter: blur(1px); */
+    position: sticky;
+    top:0%;
+    z-index: 100;
+}
+.header__searchIcon {
+    display: flex;
+    padding: 3px;
+    padding-bottom: 0.2%;
+    border: solid rgb(0, 183, 255);
+    border-top: 50px;
+    background-color: aqua;
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    height: 29px !important;
+    cursor: pointer;
+}
+.header__searchInput{
+    position: absolute;
+    top: 0%;
+    right:2.3%;
+    width: 20%;
+    height: 29px !important;
+}
+.header_logo{
+    object-fit: contain;
+    position: absolute;
+    left:0.5%;
+    height: 17.2%;
+}
+.header__optionLine1{
+    position: absolute;
+    left: 3.3%;
+    border: 10px solid rgb(37, 83, 83);
+    border-style: solid;
+    background-color: aquamarine;
+    color:black;
+    cursor: pointer;
+}
+/* .header__optionLine2{
+    position: absolute;
+    left: 8.6%;
+    border: 10px  aqua;
+    border-style: solid;
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+} */
+.header__optionLine3{
+    position: absolute;
+    left: 8.6%;
+    border: 10px solid rgb(33, 82, 82);
+    border-style: solid;
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+.apply_button{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    width: 20%;
+    height: 85px;
+    border: 1px solid whitesmoke;
+    margin-top: 10px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+.header_row{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))
+}
