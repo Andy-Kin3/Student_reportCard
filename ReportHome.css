@@ -1,7 +1,0 @@
-html{
-    background: linear-gradient(90deg, '#E6BE8A', '#FFFDD0', 'wheat');
-}
-.home_row {
-    display: flex;
-    justify-content: space-between;
-}
